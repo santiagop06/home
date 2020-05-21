@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./css/Home.css";
 
 export default function Home() {
-  let [name, setName] = useState("");
+  let [name, setName] = useState(" ");
 
   useEffect(() => {
     const arr = "Santiago Puentes       ";
@@ -13,7 +13,7 @@ export default function Home() {
       setName(aux);
       i++;
       if (i === arr.length + 1) {
-        setName("");
+        setName("|");
         aux = "";
         i = 0;
       }

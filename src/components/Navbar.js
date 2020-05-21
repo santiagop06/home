@@ -3,7 +3,7 @@ import React from "react";
 export default function Navigation() {
   return (
     <nav
-      className="courier "
+      className="courier f6 f3-l "
       style={{ display: "flex", justifyContent: "flex-start" }}
     >
       <a href="#" className="link dim  gold ml4 mt3 ">
