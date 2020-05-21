@@ -22,7 +22,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-column flex-row-ns mr3 mb0 code pb0 ">
+    <div
+      className="flex flex-column flex-row-ns mt3 mr3 mb0 code pb0 "
+      id="home"
+    >
       <div className="db dtc v-mid-ns tl w-100 w-50-ns gold ma3  ">
         <p className="f2 f1-l mb2 mt3 b ">{name}</p>
         <p className="f4 f3-l ma0 courier">FULL STACK JR</p>

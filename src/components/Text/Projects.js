@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <div>
-      <div className="flex  flex-wrap">
+    <div id="project">
+      <div className="flex  flex-wrap-reverse">
         <div className="  w-100-ns  w-50-l ">
           <div className="ma4 mb1">
             <img src={require("./img/proyectos/faceapp.PNG")} />
@@ -26,7 +26,7 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      <div className="flex  flex-wrap mt3">
+      <div className="flex  flex-wrap-reverse mt3">
         <div className=" w-100-ns w-50-l ">
           <div className="ma4 mb1">
             <img src={require("./img/proyectos/robofriends.PNG")} />
@@ -41,7 +41,7 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      <div className="flex  flex-wrap mt3">
+      <div className="flex  flex-wrap-reverse mt3">
         <div className="   w-100-ns  w-50-l ">
           <div className="ma4 mb1">
             <img src={require("./img/proyectos/background.PNG")} />

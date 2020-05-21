@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Resume() {
   return (
-    <div className="mb2">
+    <div className="mb2" id="resume">
       <div className=" flex mt3 code w-100 ">
         <div className="  bw2 pa3 w-50">
           <h2 className=" light-green bg-animate hover-light-yellow fw5">

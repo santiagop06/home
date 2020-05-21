@@ -39,7 +39,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="ma3">
+    <div className="ma3" id="skill">
       <div className="flex flex-wrap code">
         {list.map((i) => Bar(i.w, i.skill))}
       </div>
