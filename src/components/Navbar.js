@@ -4,7 +4,7 @@ export default function Navigation() {
   return (
     <header>
       <nav
-        className="courier"
+        className="courier f6 f4-l"
         style={{ display: "flex", justifyContent: "flex-start" }}
       >
         <a href="#home" className="link dim  gold ml4 mt3 ">
