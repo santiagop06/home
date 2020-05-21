@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Container from "./components/Container";
 import "./App.css";
@@ -9,6 +9,7 @@ import Skills from "./components/Text/Skills";
 import Particles from "react-particles-js";
 
 function App() {
+  const [light, setLight] = useState(false);
   const particlesOptions = {
     particles: {
       number: {
