@@ -47,6 +47,9 @@ export default function Skills({ light }) {
       }
     >
       <div className="ma3" id="skill">
+        <p className={light ? "f3 fw6 code purple" : "f3 fw6 code"}>
+          Habilidades
+        </p>
         <div className="flex flex-wrap code">
           {list.map((i) => Bar(i.w, i.skill, light))}
         </div>

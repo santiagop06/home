@@ -10,6 +10,7 @@ export default function Resume({ light }) {
       }
     >
       <div className="mb2" id="resume">
+        <p className={light ? "f3 fw6 code purple" : "f3 fw6 code"}>Resumen</p>
         <div className=" flex mt3 code w-100 ">
           <div className="  bw2 pa3 w-50">
             <h2

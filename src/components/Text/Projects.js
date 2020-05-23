@@ -10,6 +10,9 @@ export default function Projects({ light }) {
       }
     >
       <div id="project">
+        <p className={light ? "f3 fw6 code purple" : "f3 fw6 code"}>
+          Proyectos
+        </p>
         <div className="flex  flex-wrap-reverse">
           <div className="  w-100-ns  w-50-l ">
             <div className="ma4 mb1">
