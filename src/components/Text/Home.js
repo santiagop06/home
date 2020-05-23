@@ -95,6 +95,7 @@ export default function Home({ light, setLight }) {
               </svg>
             </a>
             <SlideButton light={light} setLight={setLight} />
+            <p className={light ? "f5 light-purple" : "f5 gray"}>¡Pruebame!</p>
           </div>
         </div>
         <div className="db dtc v-mid-ns w-100 w-50-ns flex justify-center align-center"></div>
