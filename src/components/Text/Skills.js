@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import ProgressBar from "./ProgressBar";
 
-export default function Skills() {
+export default function Skills({ light }) {
   const list = [
     {
       skill: "React.Js",
@@ -39,20 +39,32 @@ export default function Skills() {
   ];
 
   return (
-    <div className="ma3" id="skill">
-      <div className="flex flex-wrap code">
-        {list.map((i) => Bar(i.w, i.skill))}
+    <div
+      className={
+        light
+          ? "blue ma3 ml4 ba b--dotted bw2"
+          : "gold ma3 ml4 ba b--dotted bw2"
+      }
+    >
+      <div className="ma3" id="skill">
+        <div className="flex flex-wrap code">
+          {list.map((i) => Bar(i.w, i.skill, light))}
+        </div>
       </div>
     </div>
   );
 }
 
-function Bar(w, text) {
+function Bar(w, text, light) {
   return (
     <Fragment className="mt2">
-      <div className="w-50 light-yellow fw4 mt3">{text}</div>
+      <div
+        className={light ? "w-50 purple fw6 mt3" : "w-50 light-yellow fw4 mt3"}
+      >
+        {text}
+      </div>
       <div className="w-50 mt3">
-        <ProgressBar w={w} />
+        <ProgressBar w={w} ligh={light} />
       </div>
     </Fragment>
   );

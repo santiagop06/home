@@ -10,7 +10,6 @@ export default function SlideButton({ light, setLight }) {
           value="Dark"
           onChange={(e) => {
             setLight(!light);
-            console.log(light);
           }}
         />
         <span className="slider round"></span>

@@ -1,85 +1,137 @@
 import React from "react";
 
-export default function Projects() {
+export default function Projects({ light }) {
   return (
-    <div id="project">
-      <div className="flex  flex-wrap-reverse">
-        <div className="  w-100-ns  w-50-l ">
-          <div className="ma4 mb1">
-            <img src={require("./img/proyectos/faceapp.PNG")} />
+    <div
+      className={
+        light
+          ? "blue ma3 ml4 ba b--dotted bw2"
+          : "gold ma3 ml4 ba b--dotted bw2"
+      }
+    >
+      <div id="project">
+        <div className="flex  flex-wrap-reverse">
+          <div className="  w-100-ns  w-50-l ">
+            <div className="ma4 mb1">
+              <img src={require("./img/proyectos/faceapp.PNG")} />
+            </div>
+            <div>
+              {socialIcon(
+                "https://github.com/santiagop06/FaceApp",
+                "https://face-app-smart.herokuapp.com/",
+                light
+              )}
+            </div>
           </div>
-          <div>
-            {socialIcon(
-              "https://github.com/santiagop06/FaceApp",
-              "https://face-app-smart.herokuapp.com/"
-            )}
-          </div>
-        </div>
-        <div className="  pa3 white w-100-ns  w-50-l">
-          <h2 className="f4 f3-l b code light-yellow">FaceApp</h2>
-          <p className="code tj ">
-            FaceApp es una applicacion que usa la API de deteccion de rostros de
-            Clarifai en una foto, detecta y sobrepone con CSS un cuadro en la
-            ubicacion de la cara.
-            <br />
-            <br />
-            Esta a su vez realiza detalles de validacion de usuarios, cifrado de
-            contraseñas y un conteo del numero de veces que el usuario ha usado
-            la API. Su FrontEnd esta hecho con React.js y Tacyons. Su BackEnd
-            esta hecho en PostgreSQL, Express.js, bcrypt-node.js, y esta alojada
-            en Heroku.
-          </p>
-        </div>
-      </div>
-      <div className="flex  flex-wrap-reverse mt3">
-        <div className=" w-100-ns w-50-l ">
-          <div className="ma4 mb1">
-            <img src={require("./img/proyectos/robofriends.PNG")} />
-          </div>
-          <div>
-            {socialIcon(
-              "https://github.com/santiagop06/robofriends",
-              "https://santiagop06.github.io/robofriends/"
-            )}
-          </div>
-        </div>
-        <div className="  pa3 w-100-ns w-50-l white">
-          <h2 className="f4 f3-l b code light-yellow"> RoboFriends</h2>
-          <p className="code tj">
-            RoboFriends es una SPA hecha en React.js, con uso de Redux, y una
-            API de la cual extraemos nuestros RoboFriends.
-          </p>
-        </div>
-      </div>
-      <div className="flex  flex-wrap-reverse  mt3">
-        <div className="   w-100-ns  w-50-l ">
-          <div className="ma4 mb1">
-            <img src={require("./img/proyectos/background.PNG")} />
-          </div>
-          <div>
-            {socialIcon(
-              "https://github.com/santiagop06/backgroundchange",
-              "https://santiagop06.github.io/backgroundchange"
-            )}
+          <div
+            className={
+              light
+                ? "  pa3 navy w-100-ns  w-50-l"
+                : "  pa3 white w-100-ns  w-50-l"
+            }
+          >
+            <h2
+              className={
+                light ? "f4 f3-l b code purple" : "f4 f3-l b code light-yellow"
+              }
+            >
+              FaceApp
+            </h2>
+            <p className="code tj ">
+              FaceApp es una applicacion que usa la API de deteccion de rostros
+              de Clarifai en una foto, detecta y sobrepone con CSS un cuadro en
+              la ubicacion de la cara.
+              <br />
+              <br />
+              Esta a su vez realiza detalles de validacion de usuarios, cifrado
+              de contraseñas y un conteo del numero de veces que el usuario ha
+              usado la API. Su FrontEnd esta hecho con React.js y Tacyons. Su
+              BackEnd esta hecho en PostgreSQL, Express.js, bcrypt-node.js, y
+              esta alojada en Heroku.
+            </p>
           </div>
         </div>
-        <div className=" pa3 w-100-ns  w-50-l white code">
-          <h2 className="light-yellow f4 f3-l b code">Background Color</h2>
-          <p className="tj">
-            Background Color es una sencilla aplicacion hecha principalmente a
-            traves de CSS, que cambia el background de una pagina web por un
-            gradiente entre dos colores dados
-          </p>
+        <div className="flex  flex-wrap mt3">
+          <div
+            className={
+              light
+                ? "  pa3 navy w-100-ns  w-50-l"
+                : "  pa3 white w-100-ns  w-50-l"
+            }
+          >
+            <h2
+              className={
+                light ? "f4 f3-l b code purple" : "f4 f3-l b code light-yellow"
+              }
+            >
+              {" "}
+              RoboFriends
+            </h2>
+            <p className="code tj">
+              RoboFriends es una SPA hecha en React.js, con uso de Redux, y una
+              API de la cual extraemos nuestros RoboFriends.
+            </p>
+          </div>
+          <div className=" w-100-ns w-50-l ">
+            <div className="ma4 mb1">
+              <img src={require("./img/proyectos/robofriends.PNG")} />
+            </div>
+            <div>
+              {socialIcon(
+                "https://github.com/santiagop06/robofriends",
+                "https://santiagop06.github.io/robofriends/",
+                light
+              )}
+            </div>
+          </div>
+        </div>
+        <div className="flex  flex-wrap-reverse  mt3">
+          <div className="   w-100-ns  w-50-l ">
+            <div className="ma4 mb1">
+              <img src={require("./img/proyectos/background.PNG")} />
+            </div>
+            <div>
+              {socialIcon(
+                "https://github.com/santiagop06/backgroundchange",
+                "https://santiagop06.github.io/backgroundchange",
+                light
+              )}
+            </div>
+          </div>
+          <div
+            className={
+              light
+                ? "  pa3 navy w-100-ns  w-50-l"
+                : "  pa3 white w-100-ns  w-50-l"
+            }
+          >
+            <h2
+              className={
+                light ? "f4 f3-l b code purple" : "f4 f3-l b code light-yellow"
+              }
+            >
+              Background Color
+            </h2>
+            <p className="tj">
+              Background Color es una sencilla aplicacion hecha principalmente a
+              traves de CSS, que cambia el background de una pagina web por un
+              gradiente entre dos colores dados
+            </p>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-const socialIcon = (github, demo) => (
+const socialIcon = (github, demo, light) => (
   <div className="mb2">
     <a
-      className="link dim light-green dib br-100 h2 w2 mr3 "
+      className={
+        light
+          ? "link dim green dib br-100 h2 w2 mr3 "
+          : "link dim light-green dib br-100 h2 w2 mr3 "
+      }
       href={github}
       target="_blank"
     >
@@ -93,7 +145,11 @@ const socialIcon = (github, demo) => (
       </svg>
     </a>
     <a
-      className="link dim light-green dib br-100 h2 w2 mr3 "
+      className={
+        light
+          ? "link dim green dib br-100 h2 w2 mr3 "
+          : "link dim light-green dib br-100 h2 w2 mr3 "
+      }
       href={demo}
       title=""
       target="_blank"
